@@ -77,8 +77,10 @@ printlines = input('And do you want to print matching lines?\n')
 savefile = input('Do you want to save the output to a file?\n')
 if savefile == 'yes':
     outfilename = input("Save file as:")
+    ffoot = open('R:\\OneDrive\\PythonProjects\\InputOutput\\Output\\' + outfilename, 'w')
+else:
+    outfilename = None
 fhand = open('R:\\OneDrive\\PythonProjects\\InputOutput\\Input\\' + inpfilename)
-ffoot = open('R:\\OneDrive\\PythonProjects\\InputOutput\\Output\\' + outfilename, 'w')
 for line in fhand:
     line = line.rstrip()
     line = line.strip()
@@ -92,7 +94,8 @@ for line in fhand:
             print(line)
         if savefile == 'yes':
             ffoot.write(line.upper() + '\n') #added print to uppercase as part of exercise
-ffoot.close()
+if outfilename != None:
+    ffoot.close()
 print('There were', count, 'lines containing', '"' + searchstring + '"')
 
 
