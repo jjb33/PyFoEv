@@ -2,5 +2,5 @@
 Expecting an A
 
 ## Chapters
-Each file will be a different chapter
+Each folder will be a different chapter
 
