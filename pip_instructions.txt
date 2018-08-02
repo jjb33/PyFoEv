@@ -1,0 +1,2 @@
+-m pip install -U beautifulsoup4
+python -m pip install --upgrade pip
