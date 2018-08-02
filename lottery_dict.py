@@ -31,7 +31,7 @@ def picknums(): #prompt the user to pick numbers
             print(emsg6)
             continue
         p = int(p)
-        if p in picks or (0 < p < 27) == False: #make sure number within range
+        if (0 < p < 27) == False: #make sure number within range
             print(emsg6)
             continue
         picks[p] = p #put the number in the dictionary
