@@ -1,4 +1,16 @@
-Idle 3.7 Work
+Idle 3.7 64-bit Work
 Your odds of getting these winning numbers are about 1 in 14632508
 This calculation took this much time (HH:MM:SS):  0:02:44
+(~5.32MM draws per minute)
+
+Idle 3.7 64-bit Work 
+Your odds of getting these winning numbers are about 1 in 83636824
+This calculation took this much time (HH:MM:SS):  0:16:42
+(~4.99MM draws per minute)
+
+Powershell Home
+Your odds of getting these winning numbers are about 1 in 216369666
+This calculation took this much time (HH:MM:SS):  0:48:19
+(~4.49 draws per minute)
+
 
