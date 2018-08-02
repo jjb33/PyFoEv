@@ -1,42 +1,67 @@
+'''
+This program simulates a Powerball lottery drawing. It prompts the user to pick the 6 unique numbers required for the drawing. It will then draw a complete set of winning numbers until the draw matches the user's pick.
+'''
+
+
 import random
-import timeit
+import time
+from datetime import timedelta
 
-starttime = timeit.default_timer()
+def picknums(): #prompt the user to pick numbers
+    picks = {}
+    emsg1_5 = 'ERROR! Pick a UNIQUE WHOLE NUMBER between 1 and 69:\n'
+    emsg6 = 'ERROR! Pick a UNIQUE WHOLE NUMBER between 1 and 26:\n'
+    while len(picks) < 5: #for the first 5 numbers
+        p = input('Pick a unique number between 1 and 69:\n')
+        try:
+            int(p) #make sure it is a whole number
+        except:
+            print(emsg1_5)
+            continue
+        p = int(p)
+        if p in picks or (0 < p < 70) == False: #make sure hasn't already been picked and number within range
+            print(emsg1_5)
+            continue
+        picks[p] = p #put the number in the dictionary
+    while len(picks) < 6: #for the last number
+        p = input('Pick a unique number between 1 and 26:\n')
+        try:
+            int(p) #make sure it is a whole number
+        except:
+            print(emsg6)
+            continue
+        p = int(p)
+        if p in picks or (0 < p < 27) == False: #make sure number within range
+            print(emsg6)
+            continue
+        picks[p] = p #put the number in the dictionary
+    return picks
 
-def windraw():
+def windraw(): #draw the winning numbers
     win = {}
-    n = 1
-    while len(win) <= 5:
+    while len(win) <= 4: #draw the first 5 numbers
         ball = random.randrange(1, 70)
-        if ball not in win:
+        if ball not in win: #can't pick number already picked
             win[ball] = ball
-            n += 1
         else:
             continue
-    ball = random.randrange(1, 27)
+    ball = random.randrange(1, 27) #draw the last number
     win[ball] = ball
     return win
 
-def picknums():
-    one = input('First number? (1-69)')
-    two = input('Second number? (1-69)')
-    three = input('Third number? (1-69)')
-    four = input('Fourth number? (1-69)')
-    five = input('Fifth number? (1-69)')
-    six = input('Power number? (1-26')
-    picks = {one:one, two:two, three:three, four:four, five:five, six:six}
-    return picks
-
-
-odds = 0
-x = windraw()
-y = {11:11, 12:12, 13:13, 14:14, 15:15, 22:22} #picknums()
-while x != y:
-    odds += 1
+def play():
+    odds = 1
     x = windraw()
-    if odds % 10000 == 0:
-        print(odds)
+    y = picknums()
+    starttime = time.time() #for measuring time to get calculation
+    while x != y:
+        odds += 1
+        x = windraw() #draw again if picks not a winner
+        if odds % 10000 == 0: #print every 1 in every 10K odds to show working
+            print(odds)
 
-stoptime = timeit.default_timer()
-print('Your odds of getting these winning numbers are about 1 in', odds)
-print('This calculation took this much time: ', (stoptime - starttime))
+    stoptime = time.time()
+    print('Your odds of getting these winning numbers are about 1 in', odds)
+    print('This calculation took this much time (HH:MM:SS): ', str(timedelta(seconds = (round(stoptime, 0) - round(starttime, 0)))))
+
+play()
