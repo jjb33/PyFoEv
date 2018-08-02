@@ -13,4 +13,7 @@ Your odds of getting these winning numbers are about 1 in 216369666
 This calculation took this much time (HH:MM:SS):  0:48:19
 (~4.49 draws per minute)
 
-
+Idle 3.7 64 bit Home
+Your odds of getting these winning numbers are about 1 in 59,308,583
+This calculation took this much time (HH:MM:SS):  0:13:21
+Draw speed was 4,442,590 draws per minute
