@@ -31,7 +31,7 @@ def picknums(): #prompt the user to pick numbers
             print(emsg6)
             continue
         p = int(p)
-        if p in picks or (0 < p < 27) == False: #make sure number within range
+        if (0 < p < 27) == False: #make sure number within range
             print(emsg6)
             continue
         picks[p] = p #put the number in the dictionary
@@ -58,10 +58,10 @@ def play():
         odds += 1
         x = windraw() #draw again if picks not a winner
         if odds % 100000 == 0: #print every 1 in every 100K odds to show working
-            print(odds)
+            print('{:,}'.format(odds))
 
     stoptime = time.time()
-    print('Your odds of getting these winning numbers are about 1 in', odds)
+    print('Your odds of getting these winning numbers are about 1 in', ('{:,}'.format(odds)))
     print('This calculation took this much time (HH:MM:SS): ', str(timedelta(seconds = (round(stoptime, 0) - round(starttime, 0)))))
-
+    print('Draw speed was', ('{:,}'.format(odds/((round(stoptime, 0) - round(starttime, 0))/60))), 'draws per minute')
 play()
