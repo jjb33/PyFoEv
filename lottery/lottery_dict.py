@@ -63,5 +63,5 @@ def play():
     stoptime = time.time()
     print('Your odds of getting these winning numbers are about 1 in', ('{:,}'.format(odds)))
     print('This calculation took this much time (HH:MM:SS): ', str(timedelta(seconds = (round(stoptime, 0) - round(starttime, 0)))))
-
+    print('Draw speed was', ('{:,}'.format(odds/((round(stoptime, 0) - round(starttime, 0))/60))), 'draws per minute')
 play()
