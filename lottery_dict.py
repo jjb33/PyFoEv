@@ -1,4 +1,7 @@
 import random
+import timeit
+
+starttime = timeit.default_timer()
 
 def windraw():
     win = {}
@@ -34,4 +37,6 @@ while x != y:
     if odds % 10000 == 0:
         print(odds)
 
+stoptime = timeit.default_timer()
 print('Your odds of getting these winning numbers are about 1 in', odds)
+print('This calculation took this much time: ', (stoptime - starttime))
