@@ -22,3 +22,105 @@ Your odds of getting these winning numbers are about 1 in 157,849,734
 This calculation took this much time (HH:MM:SS):  0:36:59
 Draw speed was 4,268,131.608832807 draws per minute
 
+###############################################################
+Home PC in Idle
+Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+ RESTART: R:\OneDrive\PythonProjects\PyFoEv_Repo\PyFoEv\lottery\lottery_dict.auto.py 
+Your odds of getting these winning numbers are about 1 in 102,548,038
+This calculation took this much time (HH:MM:SS):  0:22:24
+Draw speed was 4,578,037.410714286 draws per minute
+Your odds of getting these winning numbers are about 1 in 41,013,625
+This calculation took this much time (HH:MM:SS):  0:08:53
+Draw speed was 4,616,918.386491558 draws per minute
+Your odds of getting these winning numbers are about 1 in 15,199,126
+This calculation took this much time (HH:MM:SS):  0:03:19
+Draw speed was 4,582,651.055276382 draws per minute
+Your odds of getting these winning numbers are about 1 in 12,137,381
+This calculation took this much time (HH:MM:SS):  0:02:38
+Draw speed was 4,609,132.025316455 draws per minute
+Your odds of getting these winning numbers are about 1 in 104,442,510
+This calculation took this much time (HH:MM:SS):  0:22:36
+Draw speed was 4,621,350.0 draws per minute
+Your odds of getting these winning numbers are about 1 in 208,136,391
+This calculation took this much time (HH:MM:SS):  0:45:08
+Draw speed was 4,611,589.165435746 draws per minute
+Your odds of getting these winning numbers are about 1 in 34,493,866
+This calculation took this much time (HH:MM:SS):  0:07:27
+Draw speed was 4,630,049.127516778 draws per minute
+Your odds of getting these winning numbers are about 1 in 53,684,537
+This calculation took this much time (HH:MM:SS):  0:11:45
+Draw speed was 4,568,896.765957447 draws per minute
+Your odds of getting these winning numbers are about 1 in 274,440,937
+This calculation took this much time (HH:MM:SS):  0:59:33
+Draw speed was 4,608,579.966414778 draws per minute
+Your odds of getting these winning numbers are about 1 in 83,348,390
+This calculation took this much time (HH:MM:SS):  0:18:07
+Draw speed was 4,600,647.102115915 draws per minute
+Your odds of getting these winning numbers are about 1 in 155,258,480
+This calculation took this much time (HH:MM:SS):  0:33:36
+Draw speed was 4,620,788.095238095 draws per minute
+Your odds of getting these winning numbers are about 1 in 14,376,719
+This calculation took this much time (HH:MM:SS):  0:03:11
+Draw speed was 4,516,246.806282722 draws per minute
+Your odds of getting these winning numbers are about 1 in 14,099,143
+This calculation took this much time (HH:MM:SS):  0:03:03
+Draw speed was 4,622,669.836065574 draws per minute
+Your odds of getting these winning numbers are about 1 in 15,490,067
+This calculation took this much time (HH:MM:SS):  0:03:21
+Draw speed was 4,623,900.597014925 draws per minute
+Your odds of getting these winning numbers are about 1 in 39,462,368
+This calculation took this much time (HH:MM:SS):  0:08:30
+Draw speed was 4,642,631.529411765 draws per minute
+Your odds of getting these winning numbers are about 1 in 17,942,321
+This calculation took this much time (HH:MM:SS):  0:03:55
+Draw speed was 4,581,018.127659575 draws per minute
+Your odds of getting these winning numbers are about 1 in 77,066,705
+This calculation took this much time (HH:MM:SS):  0:16:38
+Draw speed was 4,633,268.837675351 draws per minute
+Your odds of getting these winning numbers are about 1 in 41,770,809
+This calculation took this much time (HH:MM:SS):  0:09:03
+Draw speed was 4,615,559.005524862 draws per minute
+Your odds of getting these winning numbers are about 1 in 134,283,351
+This calculation took this much time (HH:MM:SS):  0:28:59
+Draw speed was 4,633,123.09373203 draws per minute
+Your odds of getting these winning numbers are about 1 in 61,271,914
+This calculation took this much time (HH:MM:SS):  0:13:20
+Draw speed was 4,595,393.55 draws per minute
+Your odds of getting these winning numbers are about 1 in 350,708,011
+This calculation took this much time (HH:MM:SS):  1:16:37
+Draw speed was 4,577,437.602784425 draws per minute
+Your odds of getting these winning numbers are about 1 in 22,371,767
+This calculation took this much time (HH:MM:SS):  0:04:50
+Draw speed was 4,628,641.448275862 draws per minute
+Your odds of getting these winning numbers are about 1 in 12,367,100
+This calculation took this much time (HH:MM:SS):  0:02:41
+Draw speed was 4,608,857.142857144 draws per minute
+Your odds of getting these winning numbers are about 1 in 176,292,058
+This calculation took this much time (HH:MM:SS):  0:38:18
+Draw speed was 4,602,925.796344648 draws per minute
+Your odds of getting these winning numbers are about 1 in 19,298,935
+This calculation took this much time (HH:MM:SS):  0:04:11
+Draw speed was 4,613,291.2350597605 draws per minute
+Your odds of getting these winning numbers are about 1 in 24,467,483
+This calculation took this much time (HH:MM:SS):  0:05:19
+Draw speed was 4,602,034.420062697 draws per minute
+Your odds of getting these winning numbers are about 1 in 149,945,956
+This calculation took this much time (HH:MM:SS):  0:32:23
+Draw speed was 4,630,343.468862584 draws per minute
+Your odds of getting these winning numbers are about 1 in 29,120,309
+This calculation took this much time (HH:MM:SS):  0:06:27
+Draw speed was 4,514,776.5891472865 draws per minute
+Your odds of getting these winning numbers are about 1 in 17,410,481
+This calculation took this much time (HH:MM:SS):  0:03:56
+Draw speed was 4,426,393.474576271 draws per minute
+Your odds of getting these winning numbers are about 1 in 26,868,582
+This calculation took this much time (HH:MM:SS):  0:06:14
+Draw speed was 4,310,467.700534759 draws per minute
+Your odds of getting these winning numbers are about 1 in 51,716,674
+This calculation took this much time (HH:MM:SS):  0:11:58
+Draw speed was 4,321,727.632311977 draws per minute
+Your odds of getting these winning numbers are about 1 in 7,635,555
+This calculation took this much time (HH:MM:SS):  0:01:45
+Draw speed was 4,363,174.285714285 draws per minute
