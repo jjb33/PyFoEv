@@ -16,4 +16,9 @@ This calculation took this much time (HH:MM:SS):  0:48:19
 Idle 3.7 64 bit Home
 Your odds of getting these winning numbers are about 1 in 59,308,583
 This calculation took this much time (HH:MM:SS):  0:13:21
-Draw speed was 4,442,590 draws per minute
+
+Idle 3.7 64-bit Home
+Your odds of getting these winning numbers are about 1 in 157,849,734
+This calculation took this much time (HH:MM:SS):  0:36:59
+Draw speed was 4,268,131.608832807 draws per minute
+
