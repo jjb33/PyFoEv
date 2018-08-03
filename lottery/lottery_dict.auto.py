@@ -8,33 +8,7 @@ import time
 from datetime import timedelta
 
 def picknums(): #prompt the user to pick numbers
-    picks = {}
-    emsg1_5 = 'ERROR! Pick a UNIQUE WHOLE NUMBER between 1 and 69:\n'
-    emsg6 = 'ERROR! Pick a UNIQUE WHOLE NUMBER between 1 and 26:\n'
-    while len(picks) < 5: #for the first 5 numbers
-        p = input('Pick a unique number between 1 and 69:\n')
-        try:
-            int(p) #make sure it is a whole number
-        except:
-            print(emsg1_5)
-            continue
-        p = int(p)
-        if p in picks or (0 < p < 70) == False: #make sure hasn't already been picked and number within range
-            print(emsg1_5)
-            continue
-        picks[p] = p #put the number in the dictionary
-    while len(picks) < 6: #for the last number
-        p = input('Pick a unique number between 1 and 26:\n')
-        try:
-            int(p) #make sure it is a whole number
-        except:
-            print(emsg6)
-            continue
-        p = int(p)
-        if (0 < p < 27) == False: #make sure number within range
-            print(emsg6)
-            continue
-        picks[p] = p #put the number in the dictionary
+    picks = {33:33, 7:7, 21:21, 42:42, 27:27, 13:13}
     return picks
 
 def windraw(): #draw the winning numbers
