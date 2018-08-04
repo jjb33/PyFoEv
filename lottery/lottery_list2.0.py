@@ -46,7 +46,7 @@ def play():
     while x != y:
         odds += 1
         x = windraw() #draw again if picks not a winner
-        if odds % 100000 == 0: #print every 1 in every 100K odds to show working
+        if odds % 1000000 == 0: #print every 1 in every 100K odds to show working
             print('{:,}'.format(odds))
 
     stoptime = time.time()
