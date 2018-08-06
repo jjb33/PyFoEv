@@ -1,8 +1,17 @@
+'''
+Tyring to get multiprocessing to work
+'''
+
 import random
 import time
 from datetime import timedelta
-
+import multiprocessing
+from multiprocessing import Pool, Process, Queue
+import threading
+import os
+    
 def picknums(): #prompt the user to pick numbers
+    global picks
     picks = []
     emsg1_5 = 'ERROR! Pick a UNIQUE WHOLE NUMBER between 1 and 69:\n'
     emsg6 = 'ERROR! Pick a UNIQUE WHOLE NUMBER between 1 and 26:\n'
@@ -40,19 +49,52 @@ def windraw(): #draw the winning numbers
     win.append(pball)
     return win
 
-def play():
+def play(num):
+    num = -1 + num
     odds = 1
-    y = picknums()
+#    y = picknums() #multiproc stops b/c runs into user input for each process
+    y = [22,66,41,24,13,6]
     x = windraw()
     starttime = time.time() #for measuring time to get calculation
     while x != y:
+        print(os.getpid())
+        print(os.getppid())
         odds += 1
-        x = windraw() #draw again if picks not a winner
-        if odds % 1000000 == 0: #print every 1 in every 100K odds to show working
-            print('{:,}'.format(odds))
+        if num >= odds:
+            print('Done picking. No winner.')
+            break
+        else:
+            x = windraw() #draw again if picks not a winner
+            if odds % 1000000 == 0: #print every 1 in every 100K odds to show working
+                print('{:,}'.format(odds))
+        
 
     stoptime = time.time()
-    print('Your odds of getting these winning numbers are about 1 in', ('{:,}'.format(odds)))
+    print('Your odds of getting these winning numbers were 1 in', ('{:,}'.format(odds)))
     print('This calculation took this much time (HH:MM:SS): ', str(timedelta(seconds = (round(stoptime, 0) - round(starttime, 0)))))
     print('Draw speed was', ('{:,}'.format(odds/((round(stoptime, 0) - round(starttime, 0))/60))), 'draws per minute')
-play()
+
+for l in range(6 ):
+    play(l)
+
+if __name__ == '__main__':
+    for l in range(6):
+        q = Process(target=play, args=(l))
+        q.start()
+        q.join()
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    
+    # q = Pool(6)
+    # q.play()
+
+# def get_id():   
+#     pp = os.getppid()   # parent process
+#     p = os.getpid()     # current process
+#     print("parent process:", pp)
+#     print("current process:", p)
+
+# if __name__ == '__main__':
+#     p = Process(target=get_id)
+#     p.start()
+#     p.join()
+
