@@ -12,5 +12,6 @@ print('dir(os)) lists the functions of os module:', '\n', dir(os))
 print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 
 print('Get path of module using os using os.__file__:\n', os.__file__)
-import oop
-print('Get any description contained in module using os using os.__doc__:\n', oop.__doc__)
+print('You can get all the default libraries from there and use them by importing them')
+print('There are 3rd party libraries out there dealing with astronomy, biology, web scraping, etc. These do not all come installed by default because it would make the installation of python very heavy!')
+print('If you want help on a specific library, type help(library name)')
