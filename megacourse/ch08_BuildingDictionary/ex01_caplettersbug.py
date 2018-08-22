@@ -16,8 +16,6 @@ try:
 except:
     data = json.load(open('data.json', 'r'))
 
-inp = ''
-
 while inp != '--exit': #-- so you can search for word 'exit' successfully
     inp = input('What word do you want to search for? (type \'--exit\' to quit)\n')
     possibilities = []
