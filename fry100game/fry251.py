@@ -16,6 +16,14 @@ import time
 
 fry100test = ['the', 'of', 'and', 'a', 'to', 'you', 'that']
 fry100all = ['the', 'of', 'and', 'a', 'to', 'in', 'is', 'you', 'that', 'it', 'he', 'was', 'for', 'on', 'are', 'as', 'with', 'his', 'they', 'I', 'at', 'be', 'this', 'have', 'from', 'or', 'one', 'had', 'by', 'words', 'but', 'not', 'what', 'all', 'were', 'we', 'when', 'your', 'can', 'said', 'there', 'use', 'an', 'each', 'which', 'she', 'do', 'how', 'their', 'if', 'will', 'up', 'other', 'about', 'out', 'many', 'then', 'them', 'these', 'so', 'some', 'her', 'would', 'make', 'like', 'him', 'into', 'time', 'has', 'look', 'two', 'more', 'write', 'go', 'see', 'number', 'no', 'way', 'could', 'people', 'my', 'than', 'first', 'water', 'been', 'called', 'who', 'oil', 'sit', 'now', 'find', 'long', 'down', 'day', 'did', 'get', 'come', 'made', 'may', 'part']
+fry100all.sort(key = len)
+# print('Let me show you all the words in the Fry 100')
+# t=0
+# while t != 19:
+
+#     for x in fry100all:
+#         print x[t]
+        
 
 def getmaxlenlist (maxlen):
     maxlenlist = []
@@ -78,7 +86,6 @@ def play():
         inp = input('ENTER for a new word, Q to quit, or N for a new game)')
         if inp == 'n'or inp == 'N':
             play()
-    
 
          
 #    Would you like to play again with new words?
@@ -86,8 +93,13 @@ def play():
 play()
 print('See you soon!')
 time.sleep(2)
-for x in reversed(range(60)):
+p =[]
+for x in reversed(range(100)):
+    p.append(x)
+for x in p:
     print('.' * x)
+# for x in random.sample(p, 70):
+#     print('>' * x)
 print('Finished')
 exit()
 
