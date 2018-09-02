@@ -26,5 +26,3 @@ class Entity():
         self.updated_at = datetime.now()
         self.last_updated_by = created_by
 
-class entity():
-    id = 'see'

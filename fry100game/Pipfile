@@ -3,11 +3,13 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[requires]
-python_version = "3.5"
-
 [packages]
 sqlalchemy = "*"
 "psycopg2-binary" = "*"
+flask = "*"
+marshmallow = "*"
 
 [dev-packages]
+
+[requires]
+python_version = "3.7"
